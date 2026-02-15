@@ -1,1 +1,85 @@
-@import 'tailwindcss';
+@import "tailwindcss";
+
+/* =========================
+   🎨 TEMA CUSTOMIZADO
+========================= */
+
+@theme {
+
+  /* =========================
+     🔵 PRIMARY
+  ========================= */
+  --color-primary-50:  #F0F5FA;
+  --color-primary-100: #E1EBF5;
+  --color-primary-200: #C3D7EB;
+  --color-primary-300: #A5C3E1;
+  --color-primary-400: #87AFD7;
+  --color-primary-500: #6B9AC4;
+  --color-primary-600: #5682AD;
+  --color-primary-700: #426A96;
+  --color-primary-800: #2E527F;
+  --color-primary-900: #1A3A68;
+
+  /* =========================
+     🟡 SECONDARY
+  ========================= */
+  --color-secondary-50:  #FEFBF5;
+  --color-secondary-100: #FDF7EB;
+  --color-secondary-200: #FBEFD7;
+  --color-secondary-300: #F9E7C3;
+  --color-secondary-400: #F7DFAF;
+  --color-secondary-500: #F0C987;
+  --color-secondary-600: #E8B865;
+  --color-secondary-700: #E0A743;
+  --color-secondary-800: #C89333;
+  --color-secondary-900: #A67725;
+
+  /* =========================
+     🟣 TERTIARY
+  ========================= */
+  --color-tertiary-50:  #F8F6FA;
+  --color-tertiary-100: #F1EDF5;
+  --color-tertiary-200: #E3DBEB;
+  --color-tertiary-300: #D5C9E1;
+  --color-tertiary-400: #C7B7D7;
+  --color-tertiary-500: #B8A5C8;
+  --color-tertiary-600: #A88FBA;
+  --color-tertiary-700: #9879AC;
+  --color-tertiary-800: #7F6491;
+  --color-tertiary-900: #664F76;
+
+  /* =========================
+     🌸 ACCENT
+  ========================= */
+  --color-accent-50:  #FDF8F9;
+  --color-accent-100: #FBF1F3;
+  --color-accent-200: #F7E3E7;
+  --color-accent-300: #F3D5DB;
+  --color-accent-400: #EFC7CF;
+  --color-accent-500: #EAB5C1;
+  --color-accent-600: #E5A3B3;
+  --color-accent-700: #E091A5;
+  --color-accent-800: #D26E88;
+  --color-accent-900: #C44B6B;
+
+  /* =========================
+     🧱 BACKGROUNDS
+  ========================= */
+  --color-background-primary:   #FAFBFD;
+  --color-background-secondary: #FFFFFF;
+  --color-background-card:      #FFFFFF;
+
+  /* =========================
+     📝 TEXT
+  ========================= */
+  --color-text-primary:   #333333;
+  --color-text-secondary: #5A6C7D;
+  --color-text-light:     #8E9AAB;
+
+  /* =========================
+     🌫 SHADOWS
+  ========================= */
+  --shadow-soft: 0 2px 8px rgba(107, 154, 196, 0.08);
+  --shadow-card: 0 4px 12px rgba(107, 154, 196, 0.12);
+  --shadow-hover: 0 8px 24px rgba(107, 154, 196, 0.16);
+}

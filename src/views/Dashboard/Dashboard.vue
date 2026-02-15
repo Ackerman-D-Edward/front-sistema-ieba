@@ -1,6 +1,5 @@
 <template>
-  <h1 class="text-9xl">MOTHER TONGUE</h1>
-  <!-- <admin-layout>
+  <admin-layout>
     <div class="grid grid-cols-12 gap-4 md:gap-6">
       <div class="col-span-12 space-y-6 xl:col-span-7">
         <ecommerce-metrics />
@@ -22,17 +21,17 @@
         <recent-orders />
       </div>
     </div>
-  </admin-layout> -->
+  </admin-layout>
 </template>
-<!-- 
+
 <script>
-import AdminLayout from '../components/layout/AdminLayout.vue'
-import EcommerceMetrics from '../components/ecommerce/EcommerceMetrics.vue'
-import MonthlyTarget from '../components/ecommerce/MonthlySale.vue'
-import MonthlySale from '../components/ecommerce/MonthlyTarget.vue'
-import CustomerDemographic from '../components/ecommerce/CustomerDemographic.vue'
-import StatisticsChart from '../components/ecommerce/StatisticsChart.vue'
-import RecentOrders from '../components/ecommerce/RecentOrders.vue'
+import AdminLayout from '@/components/layout/AdminLayout.vue'
+import EcommerceMetrics from '@/components/ecommerce/EcommerceMetrics.vue'
+import MonthlyTarget from '@/components/ecommerce/MonthlySale.vue'
+import MonthlySale from '@/components/ecommerce/MonthlyTarget.vue'
+import CustomerDemographic from '@/components/ecommerce/CustomerDemographic.vue'
+import StatisticsChart from '@/components/ecommerce/StatisticsChart.vue'
+import RecentOrders from '@/components/ecommerce/RecentOrders.vue'
 export default {
   components: {
     AdminLayout,
@@ -43,6 +42,6 @@ export default {
     StatisticsChart,
     RecentOrders,
   },
-  name: 'Ecommerce',
+  name: 'Dashboard',
 }
-</script> -->
+</script>

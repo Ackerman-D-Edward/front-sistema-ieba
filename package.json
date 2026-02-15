@@ -1,6 +1,6 @@
 {
-  "name": "front-sistema-ieba",
-  "version": "0.0.0",
+  "name": "front-ekklesia-sge",
+  "version": "1.0.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -14,16 +14,31 @@
     "format": "prettier --write --experimental-cli src/"
   },
   "dependencies": {
+    "@fullcalendar/core": "^6.1.20",
+    "@fullcalendar/daygrid": "^6.1.20",
+    "@fullcalendar/interaction": "^6.1.20",
+    "@fullcalendar/list": "^6.1.20",
+    "@fullcalendar/timegrid": "^6.1.20",
+    "@fullcalendar/vue3": "^6.1.20",
     "@tailwindcss/forms": "^0.5.11",
     "@tailwindcss/typography": "^0.5.19",
     "@tailwindcss/vite": "^4.1.18",
+    "apexcharts": "^5.4.0",
     "axios": "^1.13.1",
+    "dropzone": "^6.0.0-beta.2",
+    "flatpickr": "^4.6.13",
+    "jsvectormap": "^1.7.0",
     "lucide-vue-next": "^0.564.0",
     "pinia": "^3.0.4",
+    "swiper": "^12.1.1",
     "tailwindcss": "^4.1.18",
     "vue": "^3.5.27",
     "vue-eslint-parser": "10.0.0",
-    "vue-router": "^5.0.1"
+    "vue-flatpickr-component": "^12.0.0",
+    "vue-router": "^5.0.1",
+    "vue3-apexcharts": "^1.10.0",
+    "vuedraggable": "^2.24.3",
+    "vuevectormap": "^2.1.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.2",

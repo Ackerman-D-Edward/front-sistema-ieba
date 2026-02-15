@@ -5,46 +5,22 @@
         class="relative flex flex-col justify-center w-full h-screen lg:flex-row dark:bg-gray-900"
       >
         <div class="flex flex-col flex-1 w-full lg:w-1/2">
-          <div class="w-full max-w-md pt-10 mx-auto">
-            <router-link
-              to="/"
-              class="inline-flex items-center text-sm text-gray-500 transition-colors hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300"
-            >
-              <svg
-                class="stroke-current"
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
-                fill="none"
-              >
-                <path
-                  d="M12.7083 5L7.5 10.2083L12.7083 15.4167"
-                  stroke=""
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-              Back to dashboard
-            </router-link>
-          </div>
           <div class="flex flex-col justify-center flex-1 w-full max-w-md mx-auto">
             <div>
               <div class="mb-5 sm:mb-8">
                 <h1
                   class="mb-2 font-semibold text-gray-800 text-title-sm dark:text-white/90 sm:text-title-md"
                 >
-                  Sign In
+                  Entrar
                 </h1>
                 <p class="text-sm text-gray-500 dark:text-gray-400">
-                  Enter your email and password to sign in!
+                  Digite seu e-mail e senha para entrar!
                 </p>
               </div>
               <div>
-                <div class="grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-5">
+                <div class="flex sm:gap-5">
                   <button
-                    class="inline-flex items-center justify-center gap-3 py-3 text-sm font-normal text-gray-700 transition-colors bg-gray-100 rounded-lg px-7 hover:bg-gray-200 hover:text-gray-800 dark:bg-white/5 dark:text-white/90 dark:hover:bg-white/10"
+                    class="w-full inline-flex items-center justify-center gap-3 py-3 text-sm font-normal text-gray-700 transition-colors bg-gray-100 rounded-lg px-7 hover:bg-gray-200 hover:text-gray-800 dark:bg-white/5 dark:text-white/90 dark:hover:bg-white/10"
                   >
                     <svg
                       width="20"
@@ -70,25 +46,7 @@
                         fill="#EB4335"
                       />
                     </svg>
-                    Sign in with Google
-                  </button>
-                  <button
-                    class="inline-flex items-center justify-center gap-3 py-3 text-sm font-normal text-gray-700 transition-colors bg-gray-100 rounded-lg px-7 hover:bg-gray-200 hover:text-gray-800 dark:bg-white/5 dark:text-white/90 dark:hover:bg-white/10"
-                  >
-                    <svg
-                      width="21"
-                      class="fill-current"
-                      height="20"
-                      viewBox="0 0 21 20"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M15.6705 1.875H18.4272L12.4047 8.75833L19.4897 18.125H13.9422L9.59717 12.4442L4.62554 18.125H1.86721L8.30887 10.7625L1.51221 1.875H7.20054L11.128 7.0675L15.6705 1.875ZM14.703 16.475H16.2305L6.37054 3.43833H4.73137L14.703 16.475Z"
-                      />
-                    </svg>
-
-                    Sign in with X
+                    Iniciar sessão com o Google
                   </button>
                 </div>
                 <div class="relative py-3 sm:py-5">
@@ -97,7 +55,7 @@
                   </div>
                   <div class="relative flex justify-center text-sm">
                     <span class="p-2 text-gray-400 bg-white dark:bg-gray-900 sm:px-5 sm:py-2"
-                      >Or</span
+                      >Ou</span
                     >
                   </div>
                 </div>
@@ -126,14 +84,14 @@
                         for="password"
                         class="mb-1.5 block text-sm font-medium text-gray-700 dark:text-gray-400"
                       >
-                        Password<span class="text-error-500">*</span>
+                        Senha<span class="text-error-500">*</span>
                       </label>
                       <div class="relative">
                         <input
                           v-model="password"
                           :type="showPassword ? 'text' : 'password'"
                           id="password"
-                          placeholder="Enter your password"
+                          placeholder="Digite a sua Senha"
                           class="dark:bg-dark-900 h-11 w-full rounded-lg border border-gray-300 bg-transparent py-2.5 pl-4 pr-11 text-sm text-gray-800 shadow-theme-xs placeholder:text-gray-400 focus:border-brand-300 focus:outline-hidden focus:ring-3 focus:ring-brand-500/10 dark:border-gray-700 dark:bg-gray-900 dark:text-white/90 dark:placeholder:text-white/30 dark:focus:border-brand-800"
                         />
                         <span
@@ -216,13 +174,13 @@
                               </span>
                             </div>
                           </div>
-                          Keep me logged in
+                          Mantenha Logado
                         </label>
                       </div>
                       <router-link
                         to="/reset-password"
                         class="text-sm text-brand-500 hover:text-brand-600 dark:text-brand-400"
-                        >Forgot password?</router-link
+                        >Esqueceu a senha?</router-link
                       >
                     </div>
                     <div
@@ -239,7 +197,7 @@
                         class="flex items-center justify-center w-full px-4 py-3 text-sm font-medium text-white transition rounded-lg bg-brand-500 shadow-theme-xs hover:bg-brand-600 disabled:opacity-50"
                       >
                         <span v-if="isLoading">A entrar...</span>
-                        <span v-else>Sign In</span>
+                        <span v-else>Entrar</span>
                       </button>
                     </div>
                   </div>
@@ -248,11 +206,11 @@
                   <p
                     class="text-sm font-normal text-center text-gray-700 dark:text-gray-400 sm:text-start"
                   >
-                    Don't have an account?
+                    Não tem uma conta?
                     <router-link
-                      to="/signup"
+                      to="/cadastro"
                       class="text-brand-500 hover:text-brand-600 dark:text-brand-400"
-                      >Sign Up</router-link
+                      >Cadastre-se</router-link
                     >
                   </p>
                 </div>
@@ -270,7 +228,7 @@
                 <img width="{231}" height="{48}" src="/images/logo/auth-logo.svg" alt="Logo" />
               </router-link>
               <p class="text-center text-gray-400 dark:text-white/60">
-                Free and Open-Source Tailwind CSS Admin Dashboard Template
+                Gestão inteligente para ministérios fortes, organizando a Igreja com excelência.
               </p>
             </div>
           </div>
@@ -316,7 +274,7 @@ const handleSubmit = async () => {
     console.log('Login realizado com sucesso:', data)
 
     // Redirecionar para a dashboard ou home após o login
-    router.push('/')
+    router.push('/dashboard')
   } catch (error: any) {
     console.error('Erro ao fazer login:', error)
 

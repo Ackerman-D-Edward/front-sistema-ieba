@@ -245,7 +245,7 @@ const menuGroups = [
       {
         icon: GridIcon,
         name: "Dashboard",
-        subItems: [{ name: "Ecommerce", path: "/", pro: false }],
+        subItems: [{ name: "Dashboard", path: "/dashboard", pro: false }],
       },
       {
         icon: CalenderIcon,
@@ -307,8 +307,8 @@ const menuGroups = [
         icon: PlugInIcon,
         name: "Authentication",
         subItems: [
-          { name: "Signin", path: "/signin", pro: false },
-          { name: "Signup", path: "/signup", pro: false },
+          { name: "Signin", path: "/login", pro: false },
+          { name: "Signup", path: "/cadastro", pro: false },
         ],
       },
       // ... Add other menu items here
